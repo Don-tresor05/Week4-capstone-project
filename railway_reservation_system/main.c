@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+/**
 int Nbr[] = {101, 102, 103, 104, 105};
 char *Dest[] = {"Kigali", "Musanze", "Rubavu", "Nyundo", "Huye"};
 int AvailSeats[] = {30, 25, 15, 20, 10};
@@ -15,7 +15,89 @@ void viewAvailableTrains(int Nbr[], char *Dest[], int AvailSeats[], int Price[])
     printf("Train No: %d, Destination: %s, Available Seats: %d, Price: %d RWF\n", Nbr[3], Dest[3], AvailSeats[3], Price[3]);
     printf("Train No: %d, Destination: %s, Available Seats: %d, Price: %d RWF\n", Nbr[4], Dest[4], AvailSeats[4], Price[4]);
 }
+**/
 
+
+int train;
+int seats;
+int RS = 30;
+void bookTickets(int train, int seats, int Rs)
+{
+    printf("Enter train number: ");
+    scanf("%d", &train);
+    printf("Enter number of seats: ");
+    scanf("%d", &seats);
+
+    printf("\n%d tickets booked successfully for Train No: %d \n", seats, train);
+    printf("Remaining Seats: %d \n", RS - seats);
+}
+
+
+/**
+int train;
+int seats;
+int RS = 28;
+void bookTickets(int train, int seats, int Rs)
+{
+    printf("Enter train number: ");
+    scanf("%d", &train);
+    printf("Enter number of seats to cancel: ");
+    scanf("%d", &seats);
+
+    printf("\n%d tickets booked successfully for Train No: %d \n", train, seats);
+    printf("Remaining Seats: %d \n", RS + seats);
+}
+**/
+
+/**
+int Nbr[] = {101, 102, 103, 104, 105};
+char *Dest[] = {"Kigali", "Musanze", "Rubavu", "Nyundo", "Huye"};
+int AvailSeats[] = {30, 25, 15, 20, 10};
+int Price[] = {5000, 4500, 3500, 4000, 3000};
+char dest[];
+
+void searchTrains(char *dest, int Nbr[], char *Dest[], int AvailSeats[], int Price[])
+{
+    int found = 0;
+    printf("Enter destination: ");
+    scanf("%s", dest);
+
+
+    for (int i = 0; i<= 4; i++)
+    {
+        if (strcmp(Dest[i], dest) == 0)
+        {
+            printf("Train No: %d, Destination: %s, Available Seats: %d, Price: %d RWF\n", Nbr[i], Dest[i], AvailSeats[i], Price[i]);
+            found =1;
+        }
+            else if (strcmp(Dest[i], dest) == 0)
+            {
+                printf("Train No: %d, Destination: %s, Available Seats: %d, Price: %d RWF\n", Nbr[i], Dest[i], AvailSeats[i], Price[i]);
+            found = 1;
+            }
+            else if (strcmp(Dest[i], dest) ==0)
+            {
+                printf("Train No: %d, Destination: %s, Available Seats: %d, Price: %d RWF\n", Nbr[i], Dest[i], AvailSeats[i], Price[i]);
+                found = 1;
+            }
+            else if (strcmp(Dest[i], dest) ==0)
+            {
+                printf("Train No: %d, Destination: %s, Available Seats: %d, Price: %d RWF\n", Nbr[i], Dest[i], AvailSeats[i], Price[i]);
+                found = 1;
+            }
+            else if (strcmp(Dest[i], dest) ==0)
+            {
+                printf("Train No: %d, Destination: %s, Available Seats: %d, Price: %d RWF\n", Nbr[i], Dest[i], AvailSeats[i], Price[i]);
+                found = 1;
+            }
+
+    }
+     if (!found)
+            {
+                printf("No trains found for the destination: %s \n", dest);
+            }
+}
+**/
 
 
 int main()
@@ -39,8 +121,13 @@ int main()
     }
     **/
 
-    viewAvailableTrains(Nbr, Dest, AvailSeats, Price);
+    /**viewAvailableTrains(Nbr, Dest, AvailSeats, Price); **/
 
+    bookTickets(train, seats, RS);
+
+    /**bookTickets(train, seats, RS); **/
+
+    /**searchTrains(dest, Nbr, Dest, AvailSeats, Price); **/
 
     return 0;
 }
