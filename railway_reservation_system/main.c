@@ -17,7 +17,7 @@ void viewAvailableTrains(int Nbr[], char *Dest[], int AvailSeats[], int Price[])
 }
 **/
 
-
+/**
 int train;
 int seats;
 int RS = 30;
@@ -31,9 +31,9 @@ void bookTickets(int train, int seats, int Rs)
     printf("\n%d tickets booked successfully for Train No: %d \n", seats, train);
     printf("Remaining Seats: %d \n", RS - seats);
 }
+**/
 
 
-/**
 int train;
 int seats;
 int RS = 28;
@@ -44,10 +44,10 @@ void bookTickets(int train, int seats, int Rs)
     printf("Enter number of seats to cancel: ");
     scanf("%d", &seats);
 
-    printf("\n%d tickets booked successfully for Train No: %d \n", train, seats);
+    printf("\n%d tickets booked successfully for Train No: %d \n", seats, train);
     printf("Remaining Seats: %d \n", RS + seats);
 }
-**/
+
 
 /**
 int Nbr[] = {101, 102, 103, 104, 105};
@@ -123,9 +123,9 @@ int main()
 
     /**viewAvailableTrains(Nbr, Dest, AvailSeats, Price); **/
 
-    bookTickets(train, seats, RS);
-
     /**bookTickets(train, seats, RS); **/
+
+    bookTickets(train, seats, RS);
 
     /**searchTrains(dest, Nbr, Dest, AvailSeats, Price); **/
 
