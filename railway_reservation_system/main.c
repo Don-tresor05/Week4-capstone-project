@@ -33,7 +33,7 @@ void bookTickets(int train, int seats, int Rs)
 }
 **/
 
-
+/**
 int train;
 int seats;
 int RS = 28;
@@ -47,9 +47,9 @@ void bookTickets(int train, int seats, int Rs)
     printf("\n%d tickets booked successfully for Train No: %d \n", seats, train);
     printf("Remaining Seats: %d \n", RS + seats);
 }
+**/
 
 
-/**
 int Nbr[] = {101, 102, 103, 104, 105};
 char *Dest[] = {"Kigali", "Musanze", "Rubavu", "Nyundo", "Huye"};
 int AvailSeats[] = {30, 25, 15, 20, 10};
@@ -61,6 +61,7 @@ void searchTrains(char *dest, int Nbr[], char *Dest[], int AvailSeats[], int Pri
     int found = 0;
     printf("Enter destination: ");
     scanf("%s", dest);
+    printf("Search results: \n");
 
 
     for (int i = 0; i<= 4; i++)
@@ -97,7 +98,7 @@ void searchTrains(char *dest, int Nbr[], char *Dest[], int AvailSeats[], int Pri
                 printf("No trains found for the destination: %s \n", dest);
             }
 }
-**/
+
 
 
 int main()
@@ -125,9 +126,9 @@ int main()
 
     /**bookTickets(train, seats, RS); **/
 
-    bookTickets(train, seats, RS);
+    /**bookTickets(train, seats, RS); **/
 
-    /**searchTrains(dest, Nbr, Dest, AvailSeats, Price); **/
+    searchTrains(dest, Nbr, Dest, AvailSeats, Price);
 
     return 0;
 }
