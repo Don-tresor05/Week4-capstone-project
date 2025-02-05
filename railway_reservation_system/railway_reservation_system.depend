@@ -1,5 +1,6 @@
 # depslib dependency file v1.0
-1738087154 source:d:\dreamize africa courses\foundation phase\cprogramming-project\c-files\week4-capstone-project\railway_reservation_system\main.c
+1738587250 source:d:\dreamize africa courses\foundation phase\cprogramming-project\c-files\week4-capstone-project\railway_reservation_system\main.c
 	<stdio.h>
 	<stdlib.h>
+	<string.h>
 
